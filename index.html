@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bursary Application</title>
+    <!-- Link to External CSS File -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Link to external JavaScript file -->
+    <script src="script.js" defer></script>
+    <link rel="icon" href="Buffalocity.ico" type="image/png">
+</head>
+<body>
+  <form id="applicationForm"  enctype="multipart/form-data">
+
+        <p><b>MAYORAL BURSARY FUND APPLICATION 2025/2026</b> </p>
+        
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="surname">Surname:</label><br>
+        <input type="text" id="surname" name="surname" required><br><br>
+
+        <label for="id_number">ID Number:</label><br>
+        <input type="text" id="id_number" name="id_number" pattern="\d{13}" title="Please enter a valid 13-digit South African ID number" required><br><br>
+        
+        <label for="home-Address">Home Address:</label><br>
+        <input type="text" id="home-Address" name="home-Address" required><br><br>
+
+        <label for="Suburb">Suburb:</label><br>
+        <input type="text" id="Suburb" name="Suburb" required><br><br>
+
+        <label for="City">City:</label><br>
+        <input type="text" id="City" name="City" required><br><br>
+
+        <label for="Province">Province:</label><br>
+        <input type="text" id="Province" name="Province" required><br><br>
+
+        <label for="Postal-Code">Postal Code:</label><br>
+        <input type="number" id="Postal-Code" name="Postal-Code" required><br><br>
+
+
+        <label for="ward">Ward number:</label><br>
+        <select id="ward" name="ward" required>
+          <option value="" disabled selected>choose your ward number</option>
+          <option value="ward1">WARD-1</option>
+          <option value="ward2">WARD-2</option>
+          <option value="ward3">WARD-3</option>
+          <option value="ward4">WARD-4</option>
+          <option value="ward5">WARD-5</option>
+          <option value="ward6">WARD-6</option>
+          <option value="ward7">WARD-7</option>
+          <option value="ward8">WARD-8</option>
+          <option value="ward9">WARD-9</option>
+          <option value="ward10">WARD-10</option>
+          <option value="ward11">WARD-11</option>
+          <option value="ward12">WARD-12</option>
+          <option value="ward13">WARD-13</option>
+          <option value="ward14">WARD-14</option>
+          <option value="ward15">WARD-15</option>
+          <option value="ward16">WARD-16</option>
+          <option value="ward17">WARD-17</option>
+          <option value="ward18">WARD-18</option>
+          <option value="ward19">WARD-19</option>
+          <option value="ward20">WARD-20</option>
+          <option value="ward21">WARD-21</option>
+          <option value="ward22">WARD-22</option>
+          <option value="ward23">WARD-23</option>
+          <option value="ward24">WARD-24</option>
+          <option value="ward25">WARD-25</option>
+          <option value="ward26">WARD-26</option>
+          <option value="ward27">WARD-27</option>
+          <option value="ward28">WARD-28</option>
+          <option value="ward29">WARD-29</option>
+          <option value="ward30">WARD-30</option>
+          <option value="ward31">WARD-31</option>
+          <option value="ward32">WARD-32</option>
+          <option value="ward33">WARD-33</option>
+          <option value="ward34">WARD-34</option>
+          <option value="ward35">WARD-35</option>
+          <option value="ward36">WARD-36</option>
+          <option value="ward37">WARD-37</option>
+          <option value="ward38">WARD-38</option>
+          <option value="ward39">WARD-39</option>
+          <option value="ward40">WARD-40</option>
+          <option value="ward41">WARD-41</option>
+          <option value="ward42">WARD-42</option>
+          <option value="ward43">WARD-43</option>
+          <option value="ward44">WARD-44</option>
+          <option value="ward45">WARD-45</option>
+          <option value="ward46">WARD-46</option>
+          <option value="ward47">WARD-47</option>
+          <option value="ward48">WARD-48</option>
+          <option value="ward49">WARD-49</option>
+          <option value="ward50">WARD-50</option>
+        </select><br><br>
+
+        <label for="number">Mobile Number:</label><br>
+        <input type="number" id="number" name="number" pattern="\d{10}" title="Please enter a valid 10-digit mobile number" required><br><br>
+      
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="education">Education Level:</label><br>
+        <select id="education" name="education" required>
+            <option value="" disabled selected>Current education level</option>
+            <option value="NSC">NSC</option>
+            <option value="Diploma">Diploma</option>
+            <option value="Bachelor's Degree">Bachelor's Degree</option>
+            <option value="Honor's Degree">Honor's Degree</option>
+            <option value="Master's Degree">Master's Degree</option>
+            <option value="Doctorate">Doctorate</option>
+        </select><br><br>
+
+        <label for="qualification">Qualification Applying for:</label><br>
+        <select id="qualification" name="qualification" required>
+            <option value="" disabled selected>Select qualification applying for</option>
+            <option value="Mechanical Engineering">Mechanical Engineering</option>
+            <option value="Electrical Engineering">Electrical Engineering</option>
+            <option value="Civil Engineering">Civil Engineering</option>
+            <option value="Computer Engineering">Computer Engineering</option>
+            <option value="Quantity Surveyors">Quantity Surveyors</option>
+            <option value="Building">Building</option>
+            <option value="Town and Regional Planning">Town and Regional Planning</option>
+            <option value="Architecture">Architecture</option>
+            <option value="Facilities Management">Facilities Management</option>
+            <option value="Land Surveying">Land Surveying</option>
+            <option value="Microbiology">Microbiology</option>
+            <option value="Biochemistry">Biochemistry</option>
+            <option value="Analytical Chemistry">Analytical Chemistry</option>
+            <option value="Economics">Economics</option>
+            <option value="Accounting">Accounting</option>
+        </select><br><br>
+
+        <label for="university">University Applying for:</label><br>
+        <select id="university" name="university" required>
+            <option value="" disabled selected>Select a university</option>
+            <option value="University of Cape Town">University of Cape Town</option>
+            <option value="University of Johannesburg">University of Johannesburg</option>
+            <option value="University of Pretoria">University of Pretoria</option>
+            <option value="Stellenbosch University">Stellenbosch University</option>
+            <option value="University of the Witwatersrand">University of Witwatersrand</option>
+            <option value="University of the Western Cape">University of Western Cape</option>
+            <option value="Cape Peninsula University of Technology">Cape Peninsula University of Technology</option>
+            <option value="Walter Sisulu University">Walter Sisulu University</option>
+            <option value="Tshwane University of Technology">Tshwane University of Technology</option>
+            <option value="Nelson Mandela University">Nelson Mandela University</option>
+            <option value="Rhodes University">Rhodes University</option>
+        </select><br><br>
+
+        <p><b>WHO MUST APPLY?</b><br>
+            Students must be a bona fide resident of Buffalo City Metropolitan Municipality.<br>
+            Applicants must:<br>
+            • Be South African citizens, permanently residing in Buffalo City Metropolitan Municipality.<br>
+            • Have a proof of residence when applying for the bursary.<br>
+            • Provide proof of income of their family household.<br>
+        </p>
+        <p><b>SELECTION CRITERIA:</b><br>
+            -The student must have a matric with at least a D (50-59%) in English, C (60-69%) in Maths, Accounting and Physical Science OR NCV Level 4
+              Certificate with Mathematics.<br>
+            -Selection criteria is based strictly on academic merit and successful applicants are able to renew their bursaries annually based on their
+              academic performance in the previous year.<br>
+            -The bursary fund has a clear bias towards underprivileged individuals and is targeting young people
+              from 14 – 35 years of age.<br>
+            -The Municipality is committed to advancing Employment Equity including persons with disabilities and encourages
+              students with disabilities to apply to the Bursary Fund.<br>
+            -Buffalo City Metropolitan Municipality wishes to advise that students are personally
+              responsible for their admission to a tertiary institution.
+        </P>
+        <p><b>Please Merge all the required documents in one PDF document then upload</b></p>
+            - Final Grade 11 report<br>
+            - Mid June Grade 12 report<br>
+            - Latest academic results (N.B: If you are currently attending University, submit Grade 12 final results & Latest Academic Record)<br>
+            - Proof of Residence<br>
+            - Proof of income of your family household<br>
+            - Certified ID Copy
+        </p>
+        <label for="upload">Upload Required File:</label><br>
+        <input type="file" name="upload[]" id="upload" multiple required><br><br>
+
+        <!-- Container for listing the uploaded files -->
+        <div id="fileList"></div><br>
+      
+        <input type="submit" value="Submit">
+        <p><b>After Submitting your file check your email that we successfully received your application</b></p>
+    </form>
+
+    <!-- Footer Section -->
+    <div class="footer">
+      <div>
+          <h4>About</h4>
+          <p>This application is for students applying for the Mayoral Bursary Fund 2025/2026, provided by Buffalo City Metropolitan Municipality. The bursary is aimed at underprivileged students with a strong academic record and a need for financial assistance to pursue higher education.</p>
+      </div>
+
+      <div>
+          <h4>Contact Details</h4>
+          <p>Email: support@mayoralbursary.co.za</p>
+          <p>Phone:  043 705 1013</p>
+          <p>Our office: Special Programmes Unit, Trust Centre Building, 7thFloor</p>
+      </div>
+
+      <div>
+          <h4>Related Links</h4>
+          <p><a href="https://www.buffalocity.gov.za" target="_blank">Buffalo City Municipality</a></p>
+      </div>
+      <!-- Year and Designer Information -->
+    <div class="footer-bottom">
+      <p>&copy; <span id="currentYear"></span> | Website designed by Simthobele Peter</p>
+  </div>
+  </div>
+</body>
+</html>
